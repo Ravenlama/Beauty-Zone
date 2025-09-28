@@ -1,0 +1,44 @@
+*,
+::after,
+::before{
+    box-sizing: border-box;
+}
+ul{
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin-top: 0;
+}
+address{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-primary-dark);
+    background-image: url(/images/background-midl.png);
+    background-repeat: no-repeat;
+    background-position: -900px 1100px;
+    background-size: cover;
+}

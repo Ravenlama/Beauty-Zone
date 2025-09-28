@@ -1,0 +1,31 @@
+.carousel-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-light);
+    text-align: center;
+    flex-shrink: 0;
+
+    
+    &:hover{
+        background-color: var(--color-primary-light);
+        border-color: var(--color-light);
+    }
+    
+    &__svg{
+        fill: var(--color-primary-dark);
+    }
+    
+    &:hover &__svg{
+        fill: var(--color-light);
+    }
+}
+
+.next{
+    transform: rotate(180deg);
+}
