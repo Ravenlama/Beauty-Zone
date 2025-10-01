@@ -59,9 +59,7 @@
         <div class="container">
           <p class="main-section__title-text">Косметологічна клініка</p>
           <h1 class="main-section__title">beauty zone</h1>
-          <button class="main-section__button" type="button">
-            Замовити дзвінок
-          </button>
+          <button class="button" type="button">Замовити дзвінок</button>
           <p class="main-section__button-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -243,107 +241,134 @@
           <h2 class="section__title section__title--centered">
             Як нас <span class="text-accent">знайти</span>
           </h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4757931944964!2d30.77264847656058!3d50.50671337160291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1758664366729!5m2!1suk!2sua"
-            width="600"
-            height="480"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <p>
-            Запишіться <span class="text-accent">безкоштовно</span> та отримайте
-            подарунок
-          </p>
-          <form name="contact-form" autocomplete="off">
-            <label for="user-name">Ім'я</label>
-            <input
-              type="text"
-              id="user-name"
-              name="user-name"
-              placeholder="Ім'я"
-              required
-            />
-            <label for="user-phone">Телефон</label>
-            <input
-              type="text"
-              id="user-phone"
-              name="user-phone"
-              placeholder="Телефон"
-              required
-            />
-            <label for="user-email">Пошта</label>
-            <input
-              type="text"
-              id="user-email"
-              name="user-email"
-              placeholder="Пошта"
-              required
-            />
-            <button type="submit">Записатись безкоштовно</button>
-            <p>
-              Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
-            </p>
-          </form>
+          <div class="contacts-section__container">
+            <iframe
+              class="contacts-section__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.4757931944964!2d30.77264847656058!3d50.50671337160291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1758664366729!5m2!1suk!2sua"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contacts-section__form-container">
+              <h3 class="contacts-section__form-title text-bold">
+                Запишіться <span class="text-accent">безкоштовно</span> та
+                отримайте подарунок
+              </h3>
+              <form class="form" name="contact-form" autocomplete="off">
+                <label class="form__label visually-hidden" for="user-name"
+                  >Ім'я</label
+                >
+                <input
+                  class="form__input"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Ім'я"
+                  required
+                />
+                <label class="form__label visually-hidden" for="user-phone"
+                  >Телефон</label
+                >
+                <input
+                  class="form__input"
+                  type="text"
+                  id="user-phone"
+                  name="user-phone"
+                  placeholder="Телефон"
+                  required
+                />
+                <label class="form__label visually-hidden" for="user-email"
+                  >Пошта</label
+                >
+                <input
+                  class="form__input"
+                  type="text"
+                  id="user-email"
+                  name="user-email"
+                  placeholder="Пошта"
+                  required
+                />
+                <button class="form__button" type="submit">
+                  Записатись безкоштовно
+                </button>
+              </form>
+              <p class="contacts-section__form-button-text">
+                Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <a href="index.html">
-          <img src="./images/logo.svg" alt="logo" />
-        </a>
-        <ul>
-          <li>Про нас</li>
-          <li>Чому ми</li>
-          <li>Наші процедури</li>
-          <li>Контакти</li>
-        </ul>
-        <address>
-          <ul>
-            <li>
-              <a href="tel:+380960000007">+ 38 (096) 000 00 07</a>
-            </li>
-            <li>
-              <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
-            </li>
-            <li>
-              <a
-                target="_blank"
-                href="https://maps.app.goo.gl/egQys1PT8JBDU6TN6"
-                >Україна, м. Київ, вул. Тараса Шевченка 5
-              </a>
-            </li>
-            <li>
-              <a href="tel:+380960000007">
-                <svg width="26px" height="30px">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg width="16px" height="28px">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg width="24px" height="24px">
-                  <use href="./images/icons.svg#icon-instagramm"></use>
-                </svg>
-              </a>
-            </li>
+        <div class="footer__container">
+          <a class="footer__logo" href="index.html">
+            <img src="./images/logo.svg" alt="logo" />
+          </a>
+          <ul class="footer__nav">
+            <li class="footer__links">Про нас</li>
+            <li class="footer__links">Чому ми</li>
+            <li class="footer__links">Наші процедури</li>
+            <li class="footer__links">Контакти</li>
           </ul>
-        </address>
-        <p>Політика конфіденційності</p>
-        <p>© 2022 Дані захищені</p>
+          <address>
+            <ul class="footer__address">
+              <li>
+                <a class="footer__links" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a class="footer__links" href="mailto:beautyzone@gmail.com"
+                  >beautyzone@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="footer__links"
+                  target="_blank"
+                  href="https://maps.app.goo.gl/egQys1PT8JBDU6TN6"
+                  >Україна, м. Київ, вул. Тараса Шевченка 5
+                </a>
+              </li>
+              <div class="footer__icons-container">
+                <li>
+                  <a href="tel:+380960000007">
+                    <svg class="footer__icons" width="26px" height="30px">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="footer__icons" width="16px" height="28px">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="footer__icons" width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-instagramm"></use>
+                    </svg>
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </address>
+          <div class="footer__text-container">
+            <p class="footer__text">Політика конфіденційності</p>
+            <p class="footer__copyright">© 2022 Дані захищені</p>
+          </div>
+        </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

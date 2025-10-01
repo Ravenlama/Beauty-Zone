@@ -3,7 +3,7 @@
     &__container{
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 32px;
     }
 
     &__card-container{
@@ -17,6 +17,7 @@
     &__card{
         position: relative;
         display: flex;
+        flex-grow: 0;
         height: 456px;
         border-radius: 4px 120px;
         background: linear-gradient(180.05deg, rgba(1, 28, 68, 0) 48.53%, rgba(1, 28, 68, 0.725825) 84.61%, #011C44 101.39%);

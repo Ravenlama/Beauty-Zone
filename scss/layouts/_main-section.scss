@@ -11,10 +11,6 @@
     background-position: center top;
     background-size: cover;
 
-
-    
-    
-
     &__title-text{
         margin-bottom: 16px;
     }
@@ -30,25 +26,10 @@
         margin-bottom: 40px;
     }
 
-    &__button{
-        margin-left: 6px;
-        color: var(--color-light);
-        background-color: var(--color-primary-light);
-        padding: 16px 32px;
-        border: 2px solid var(--color-primary-light);;
-        border-radius: 32px;
-        margin-bottom: 14px;
-        font-weight: 600;
-
-        &:hover{
-            color: var(--color-primary-dark);
-            background-color: transparent;
-        }
-    }
-
-    &__button-text{
+    
+        &__button-text{
         font-size: 12px;
         max-width: 238px;
         color: var(--color-description);
-    }
+        }
 }
