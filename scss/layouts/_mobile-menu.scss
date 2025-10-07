@@ -1,0 +1,45 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 16px 20px;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: var(--color-light);
+    transition: transform 0.3s;
+
+    &.is-open{
+        transform: translateX(0);
+    }
+
+    &__button{
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        fill: var(--color-primary-dark);
+    }
+
+    &__list{
+        margin-top: 32px;
+    }
+
+    &__link{
+        margin-bottom: 16px;
+    }
+
+    &__contacts{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    &__icons{
+        transition: 0.3s;
+        &:hover{
+            fill: var(--color-primary-light);
+        }
+    }
+}

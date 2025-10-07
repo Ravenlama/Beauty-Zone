@@ -1,12 +1,13 @@
 .header{
-    background: #FFFFFF40;
-    backdrop-filter: blur(10px);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 106px;
-;
+
+    @media screen and (min-width: $bp-desktop) {
+        background: #FFFFFF40;
+        backdrop-filter: blur(10px);
+    }
 
     &__container{
         padding-top: 32px;
@@ -22,25 +23,45 @@
     }
 
     &__menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 56px;
-        flex-grow: 1;
+        display: none;
+        
+        @media screen and (min-width: $bp-desktop) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 56px;
+                flex-grow: 1;
+            }
     }
 
     &__contacts{
-        display: flex;
-        align-items: center;
-        flex-grow: 1;
-        gap: 40px;
+        display: none;
+        
+        @media screen and (min-width: $bp-desktop) {
+             display: flex;
+             align-items: center;
+             flex-grow: 1;
+             gap: 40px;
+         }
     }
 
     &__icons{
         fill: var(--color-primary-dark);
+        transition: 0.3s;
 
         &:hover{
             fill: var(--color-primary-light);
+        }
+    }
+
+    &__mobile-btn {
+        background-color: transparent;
+        border: none;
+        fill: var(--color-light);
+        transition: 0.3s;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
         }
     }
 }

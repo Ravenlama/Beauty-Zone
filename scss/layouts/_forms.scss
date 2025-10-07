@@ -10,6 +10,11 @@
         padding: 18px 32px;
         border-radius: 32px;
         border: 2px solid var(--color-not-active);
+        color: var(--color-light);
+
+        &:focus{
+            background-color: var(--color-not-active);
+        }
     }
 
     &__button{
@@ -20,5 +25,11 @@
         border-radius: 32px;
         margin-bottom: 8px;
         font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+            background-color: transparent;
+        }
     }
 }

@@ -1,35 +1,85 @@
 .main-section{
-    padding-left: 106px;
-    padding-top: 122px;
-    padding-bottom: 126px;
+    padding: 70px 20px;
     background-image:linear-gradient(89.38deg, #FFFFFF 30.62%,
      rgba(255, 255, 255, 0.850898) 41.31%,
      rgba(255, 255, 255, 0.193204) 58.65%,
      rgba(255, 255, 255, 0) 72.78%),
     url(../images/massage-background.png);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center bottom;
     background-size: cover;
 
+    @media screen and (min-width: $bp-desktop) {
+        background-size: contain;
+        background-position: center top;
+        padding-left: 106px;
+        padding-top: 122px;
+        padding-bottom: 126px;
+    }
+
     &__title-text{
-        margin-bottom: 16px;
+        margin-bottom: 0;
+        text-align: center;
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 16px;
+            text-align: left;
+        }
     }
 
     &__title{
         font-family: 'Play';
         font-weight: 700;
-        font-size: 140px;
+        font-size: 54px;
         text-transform: capitalize;
         color: var(--color-primary-light);
-        max-width: 529px;
         line-height: 0.8;
-        margin-bottom: 40px;
+        margin-bottom: 32px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 140px;
+            margin-bottom: 40px;
+            max-width: 529px;
+            text-align: left;
+        }
     }
 
     
-        &__button-text{
-        font-size: 12px;
-        max-width: 238px;
+    &__button-text{
+        font-size: 11px;
+        max-width: 186px;
         color: var(--color-description);
+        margin: 0 auto;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 12px;
+            max-width: 238px;
+            margin: 0;
         }
+        }
+
+    &__button{
+        display: block;
+        margin: 0 auto 8px;
+        color: var(--color-light);
+        background-color: var(--color-primary-light);
+        padding: 16px 32px;
+        border: 2px solid var(--color-primary-light);;
+        border-radius: 32px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+            color: var(--color-primary-dark);
+            background-color: transparent;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            margin-left: 6px;
+            margin-bottom: 14px;
+        }
+
+    }
 }

@@ -51,15 +51,75 @@
               </li>
             </ul>
           </address>
+          <button type="button" class="header__mobile-btn menu-btn-open">
+            <svg class="header__burger-icon" width="20px" height="14px">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
+
+    <div class="mobile-menu">
+      <button type="button" class="mobile-menu__button menu-btn-close">
+        <svg width="24px" height="24px">
+          <use href="./images/icons.svg#icon-btn-close"></use>
+        </svg>
+      </button>
+      <nav>
+        <a href="index.html">
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+        <ul class="mobile-menu__list">
+          <li>
+            <a class="link mobile-menu__link" href="#about-us">Про нас</a>
+          </li>
+          <li><a class="link mobile-menu__link" href="#why-we">Чому ми</a></li>
+          <li>
+            <a class="link mobile-menu__link" href="#procedures"
+              >Наші процедури</a
+            >
+          </li>
+          <li>
+            <a class="link mobile-menu__link" href="#contacts">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <address>
+        <ul class="mobile-menu__contacts">
+          <li>
+            <a href="tel:+380960000007">
+              <svg class="mobile-menu__icons" width="26px" height="30px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="mobile-menu__icons" width="16px" height="28px">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg class="mobile-menu__icons" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-instagramm"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </address>
+    </div>
+
     <main>
       <section class="main-section">
         <div class="container">
           <p class="main-section__title-text">Косметологічна клініка</p>
           <h1 class="main-section__title">beauty zone</h1>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="main-section__button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
           <p class="main-section__button-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </p>
@@ -104,7 +164,7 @@
           </div>
         </div>
       </section>
-      <section class="why-we-section section" id="why-we">
+      <!-- <section class="why-we-section section" id="why-we">
         <div class="container">
           <h2
             class="why-we-section__title section__title section__title--centered"
@@ -159,8 +219,8 @@
             </div>
           </ul>
         </div>
-      </section>
-      <section class="procedures-section section" id="procedures">
+      </section> -->
+      <!-- <section class="procedures-section section" id="procedures">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Наші <span class="text-accent">процедури</span>
@@ -235,8 +295,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contacts-section section" id="contacts">
+      </section> -->
+      <!-- <section class="contacts-section section" id="contacts">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Як нас <span class="text-accent">знайти</span>
@@ -299,19 +359,27 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <a class="footer__logo" href="index.html">
             <img src="./images/logo.svg" alt="logo" />
           </a>
           <ul class="footer__nav">
-            <li class="footer__links">Про нас</li>
-            <li class="footer__links">Чому ми</li>
-            <li class="footer__links">Наші процедури</li>
-            <li class="footer__links">Контакти</li>
+            <li>
+              <a class="footer__links" href="">Про нас</a>
+            </li>
+            <li>
+              <a class="footer__links" href="">Чому ми</a>
+            </li>
+            <li>
+              <a class="footer__links" href="">Наші процедури</a>
+            </li>
+            <li>
+              <a class="footer__links" href="">Контакти</a>
+            </li>
           </ul>
           <address>
             <ul class="footer__address">
@@ -359,12 +427,70 @@
             </ul>
           </address>
           <div class="footer__text-container">
-            <p class="footer__text">Політика конфіденційності</p>
+            <a class="footer__links" href="#">Політика конфіденційності</a>
             <p class="footer__copyright">© 2022 Дані захищені</p>
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- <div class="backdrop is-hidden">
+      <div class="modal">
+        <button type="button" class="modal__btn-close modal-btn-close">
+          <svg width="16px" height="16px">
+            <use href="./images/icons.svg#icon-btn-close"></use>
+          </svg>
+        </button>
+        <h2 class="section__title modal__title">Замовити дзвінок</h2>
+        <div class="modal__form-container">
+          <h3 class="modal__form-title text-bold">
+            Запишіться <span class="text-accent">безкоштовно</span> та отримайте
+            подарунок
+          </h3>
+          <form class="form" name="contact-form" autocomplete="off">
+            <label class="form__label visually-hidden" for="user-name"
+              >Ім'я</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ім'я"
+              required
+            />
+            <label class="form__label visually-hidden" for="user-phone"
+              >Телефон</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              id="user-phone"
+              name="user-phone"
+              placeholder="Телефон"
+              required
+            />
+            <label class="form__label visually-hidden" for="user-email"
+              >Пошта</label
+            >
+            <input
+              class="form__input"
+              type="text"
+              id="user-email"
+              name="user-email"
+              placeholder="Пошта"
+              required
+            />
+            <button class="form__button" type="submit">
+              Записатись безкоштовно
+            </button>
+          </form>
+          <p class="contacts-section__form-button-text">
+            Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
+          </p>
+        </div>
+      </div>
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
