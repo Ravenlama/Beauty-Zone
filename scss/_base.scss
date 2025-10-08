@@ -39,6 +39,10 @@ body{
     color: var(--color-primary-dark);
     background-image: url(../images/background-midl.png);
     background-repeat: no-repeat;
-    background-position: center 1350px;
-    background-size: contain;
+    background-position: center 550px;
+    background-size: cover;
+
+    @media screen and (min-width: $bp-desktop) {
+        background-position: center 1350px;
+    }
 }

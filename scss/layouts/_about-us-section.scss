@@ -10,17 +10,6 @@
         }
     }
 
-    &__text-container{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-
-        @media screen and (min-width: $bp-desktop) {
-            gap: 40px;
-        }
-    }
-
     &__title{
         max-width: 264px;
         line-height: 1.2;
@@ -31,9 +20,13 @@
     }
 
     &__text{
-        max-width: 320px;
         font-size: 18px;
-        margin-bottom: 0;
+        margin-bottom: 16px;
+        max-width: 320px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
 
         @media screen and (min-width: $bp-desktop) {
             max-width: 709px;

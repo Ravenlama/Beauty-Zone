@@ -2,14 +2,29 @@
     
     &__container{
         display: flex;
-        gap: 32px;
+        flex-direction: column-reverse;
+        gap: 24px;
         justify-content: center;
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            gap: 32px;
+        }
     }
 
     &__map{
-        width: 600px;
-        height: 482px;  
+        height: 232px;
+        margin: 0 -24px;
         border-radius: 32px;
+
+        @media screen and (min-width: $bp-tablet) {
+            height: 342px; 
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 600px;
+            height: 482px; 
+        }
     }
 
     &__form-container{
