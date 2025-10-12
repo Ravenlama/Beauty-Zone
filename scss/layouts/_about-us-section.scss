@@ -5,7 +5,7 @@
         gap: 0;
         justify-content: center;
 
-        @media screen and (min-width: $bp-desktop) {
+        @media screen and (min-width: $bp-tablet) {
             gap: 28px;
         }
     }
